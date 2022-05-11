@@ -6,10 +6,43 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="reset.css">
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.css" integrity="sha512-SI0aF82pT58nyOjCNfyeE2Y5/KHId8cLIX/1VYzdjTRs0HPNswsJR+aLQYSWpb88GDJieAgR4g1XWZvUROQv1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+	<style>
+		.icon-trash, .icon-check{
+			display:none;
+		}
+	</style>
+	<script defer src="script.js"></script>
 </head>
 <body>
+	<section class="hero hero-body is-dark container">
+		<h1 class="title">US Location Info</h1>
+		<h2 class="subtitle">Enter the Zip Code</h2>
+		<form id="zipForm">
+			<div class="field">
+				<div class="control has-icons-left has-icons-right">
+				  <input class="input zip is-large" type="text" placeholder="Enter Zip Code">
+				  <span class="icon is-small is-left">
+					<i class="fa fa-map-pin"></i>
+				  </span>
+				  <span class="icon is-small is-right icon-check">
+					<i class="fa fa-check"></i>
+				  </span>
+				  <span class="icon is-small is-right icon-trash">
+					<i class='fa fa-remove'></i>
+				  </span>
+				</div>			
+			</div>
+		</form>
+	</section>
 	
-	<script src="script.js"></script>
+	<br>
+	<div class="container">
+		<div id="output"></div>
+	</div>
+	
+
 </body>
 </html>
 
